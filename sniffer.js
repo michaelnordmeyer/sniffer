@@ -181,6 +181,12 @@ var Sniffer = (function( win, doc, undefined ){
                     test : function(){ return win.Tumblr ? true : false; }
                 }
             ],
+            'Squarespace' : [
+                {
+                    type : 'custom',
+                    test : function(){ return win.Squarespace ? true : false; }
+                }
+            ],
             'Typepad' : [
                 {
                     type : 'meta',
