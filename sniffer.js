@@ -7,7 +7,7 @@ var Sniffer = (function( win, doc, undefined ){
 
     var sniff       = {},
         detect      = {},
-        pageinfo     = {},
+        pageinfo    = {},
         test_runner = {},
         results     = {},
         indexed_results = {},
@@ -130,22 +130,28 @@ var Sniffer = (function( win, doc, undefined ){
                     test : function(){ return win.Ext ? win.Ext.version : false; }
                 }
             ],
-            'YUI' : [
+            'YUI2' : [
                 {
                     type : 'custom',
                     test : function(){ return win.YAHOO ? win.YAHOO.VERSION : false; }
                 }
             ],
+            'YUI3' : [
+                {
+                    type : 'custom',
+                    test : function(){ return win.YUI ? win.YUI.version : false; }
+                }
+            ],
             'Google Closure' : [
                 {
                     type : 'custom',
-                    test : function(){ return !! win.goog; } // need to figure out how to get YUI version
+                    test : function(){ return !! win.goog; } // need to figure out how to get Closure version
                 }
             ],
             'Modernizr' : [
                 {
                     type : 'custom',
-                    test : function(){ return win.Modernizr ? win.Modernizr._version : false; } // need to figure out how to get YUI version
+                    test : function(){ return win.Modernizr ? win.Modernizr._version : false; }
                 }
             ],
             'Raphael' : [
@@ -421,7 +427,7 @@ var Sniffer = (function( win, doc, undefined ){
         for ( var name in obj ) return false;
         return true;
     }
-    
+
     // utility function for iterating over the tests
     var forEachTest = function( callback )
     {
@@ -439,11 +445,11 @@ var Sniffer = (function( win, doc, undefined ){
             }
         }
     }
-    
+
     var addToResults = function( group, test, res )
     {
         // add results to group results object
-        
+    
         results[group] = results[group] || {};
         results[group].results = results[group].results || {};
 
@@ -451,46 +457,46 @@ var Sniffer = (function( win, doc, undefined ){
         results[group].return_type = detect[group].return_type;
 
         results[group]['results'][test] = res;
-        
+    
         // add the result to the name-index results object
-        
+    
         indexed_results[test.toLowerCase()] = res;
     }
 
     /* publicly available methods */
-    
+
     // return results of all checks run so far 
     sniff.results = function(){
         return results;
     };
-    
+
     // perform an individual check
     sniff.check = function( to_test )
     {
         to_test = to_test.toLowerCase();
         if ( indexed_results[to_test] != undefined ) return indexed_results[to_test];
         else {
-            
+        
             forEachTest(function( group, test ){
-                
+            
                 if ( test.toLowerCase() === to_test )
                 {
                     addToResults( group, test, run( detect[group].tests[test] ) );
                     return false; // break out of forEachTest loop
                 }
-                
+            
             });
         }
         return indexed_results[to_test];
     };
-    
+
     // run or re-run all checks
     sniff.run = function()
     {
         forEachTest(function( group, test ){
-            
+        
             addToResults( group, test, run( detect[group].tests[test] ) );
-                    
+                
         });      
 
         return sniff.results();
