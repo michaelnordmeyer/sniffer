@@ -175,6 +175,12 @@ var Sniffer = (function( win, doc, undefined ){
                     test : /<link rel=["|']stylesheet["|'] [^>]+wp-content/i
                 }
             ],
+            'Tumblr' : [
+                {
+                    type : 'custom',
+                    test : function(){ return win.Tumblr ? true : false; }
+                }
+            ],
             'Typepad' : [
                 {
                     type : 'meta',
