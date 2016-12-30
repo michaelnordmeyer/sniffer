@@ -5,6 +5,6 @@ A JS library for sniffing out information about pages, such as which JS librarie
 
 Where it can, Sniffer will return a string with more information (such as a version number) for each test; otherwise it will return boolean `true` or `false`.
 
-Please see the main site at [http://allmarkedup.github.com/sniffer/](http://allmarkedup.github.com/sniffer/) for more information and usage instructions.
+Please see the main site at [http://allmarkedup.com/sniffer/](http://allmarkedup.com/sniffer/) for more information and usage instructions.
 
-Originally created for use in [Snoopy](http://github.com/allmarkedup/snoopy).
+Originally created for use in [Snoopy](https://github.com/allmarkedup/snoopy).
