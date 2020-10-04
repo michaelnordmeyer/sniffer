@@ -39,7 +39,7 @@ var Sniffer = (function( win, doc, undefined ){
 
     detect.pageinfo = {
 
-        description : 'Page information',
+        description : 'Page Information',
 
         return_type : 'detail',
 
