@@ -62,7 +62,7 @@
     <script src="https://static.squarespace.com/universal/scripts-compressed/common-c7bc949f86545e555dbc665e3315645c-min.js"></script>
     <script src="https://assets.tumblr.com/assets/scripts/tumblelog.js"></script>
     <meta name="generator" content="http://www.typepad.com/">
-    <meta name="generator" content="Wordpress 4.7.4">
+    <meta name="generator" content="WordPress 4.7.4">
   
     <!-- Other -->
 
@@ -152,9 +152,9 @@
   </script>
   <script>
     try {
-    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-    piwikTracker.trackPageView();
-    piwikTracker.enableLinkTracking();
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
     } catch( err ) {}
   </script>
 
@@ -198,16 +198,16 @@
     console.dir(results);
     for ( group in results )
     {
-        output += '<div class="group"><h2>'+results[group].description+'</h2><table>';
-        var count = 0;
+        output += '<div class="group"><h2>' + results[group].description + '</h2><table>';
+        var row = 0;
         for ( test in results[group].results )
         {
             var result = results[group].results[test];
-            var cl =  ( result == 'false' ) ? 'false' : 'true';
+            var affirmation =  ( result == 'false' ) ? 'false' : 'true';
             output += '<tr';
-            if ( count % 2 ) output += ' class="even"';
-            output += '><th>'+test+'</th><td class="'+cl+'">'+result+'</td></tr>';
-            count++;
+            if ( row % 2 ) output += ' class="even"';
+            output += '><th>' + test + '</th><td class="' + affirmation + '">' + result + '</td></tr>';
+            row++;
         }
 
         output += '</table></div>';

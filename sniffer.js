@@ -269,7 +269,7 @@ var Sniffer = (function( win, doc, undefined ){
                     test : function() { return win.wixBiSession ? true : false; }
                 }
             ],
-            'Wordpress' : [
+            'WordPress' : [
                 {
                     type : 'meta',
                     test : { name : 'generator', match : /WordPress\s?([\w\d\.\-_]*)/i }
@@ -393,7 +393,7 @@ var Sniffer = (function( win, doc, undefined ){
                     test : function() { return !! win.Cufon }
                 }
             ],
-            'Google Webfonts' : [
+            'Google Fonts' : [
                 {
                     type : 'custom',
                     test : function() { return !! win.WebFont }
