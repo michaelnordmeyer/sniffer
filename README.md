@@ -9,6 +9,65 @@ Please see the main site at [http://allmarkedup.com/sniffer/](http://allmarkedup
 
 Originally created for use in [Snoopy](https://github.com/allmarkedup/snoopy).
 
+Sniffer can detect the following items:
+
+* General page information
+  * Doctype
+  * Charset
+* JavaScript libraries
+  * Dojo
+  * ExtJS
+  * Glow
+  * Google Closure
+  * jQuery
+  * JQuery Mobile
+  * jQuery UI
+  * Modernizr
+  * MooTools
+  * Prototype
+  * Raphael
+  * Scriptaculous
+  * YUI2
+  * YUI3
+* Content Management Systems
+  * Blogger
+  * Drupal
+  * Ghost
+  * Jekyll
+  * Jimdo
+  * Joomla
+  * Medium
+  * MovableType
+  * Octopress
+  * Squarespace
+  * Tumblr
+  * Typepad
+  * Weebly
+  * Wix
+  * WordPress
+* Analytics
+  * Chartbeat
+  * Clicky
+  * Gauges
+  * Google Analytics
+  * Mint
+  * New Relic
+  * Open Web Analytics
+  * Piwik (now Matomo)
+  * Reinvigorate
+  * Slim Stat Analytics
+  * W3Counter
+  * Webtrends
+  * Woopra
+  * WordPress Stats
+* Font embedding (technique)
+  * Cufon
+  * Google Fonts
+  * sIFR
+  * Typekit
+* Commenting systems
+  * Disqus
+
 
 Contributors
 ------------
