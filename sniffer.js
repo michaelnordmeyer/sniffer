@@ -292,6 +292,13 @@ var Sniffer = (function(win, doc, undefined) {
           match: /typepad\.com/i
         }
       }],
+      'Typo3': [{
+        type: 'meta',
+        test: {
+          name: 'generator',
+          match: /Typo3 CMS/i
+        }
+      }],
       'Weebly': [{
         type: 'custom',
         test: function() {

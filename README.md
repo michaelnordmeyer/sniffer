@@ -42,6 +42,7 @@ Sniffer can detect the following items:
   * Squarespace
   * Tumblr
   * Typepad
+  * Typo3
   * Weebly
   * Wix
   * WordPress
