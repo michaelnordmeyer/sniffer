@@ -25,7 +25,6 @@ Sniffer can detect the following items:
   * Modernizr
   * MooTools
   * Prototype
-  * Raphael
   * Scriptaculous
   * YUI2
   * YUI3
@@ -47,27 +46,41 @@ Sniffer can detect the following items:
   * Wix
   * WordPress
 * Analytics
+  * Ackee
   * Chartbeat
   * Clicky
+  * Cloudflare Insights
+  * Fathom
   * Gauges
-  * Google Analytics
+  * GoatCounter
+  * Google Analytics (ga.js, analytics.js, and GA4)
+  * Koko Analytics
+  * Matomo
+  * Microanalytics
   * Mint
   * New Relic
   * Open Web Analytics
-  * Piwik (now Matomo)
+  * Pirsch
+  * Plausible
   * Reinvigorate
-  * Slim Stat Analytics
+  * Slimstat Analytics
+  * Umami
   * W3Counter
   * Webtrends
   * Woopra
   * WordPress Stats
 * Font embedding (technique)
+  * Adobe Fonts
   * Cufon
   * Google Fonts
   * sIFR
-  * Typekit
 * Commenting systems
+  * Cactus Comments
+  * Discourse
   * Disqus
+  * Giscus
+  * Isso
+  * Utterances
 
 
 Contributors

@@ -1,3 +1,5 @@
+<!-- Test might fail if HTTPS-Only mode is enabled in Firefox, -->
+<!-- because some dependencies are only available via HTTP. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,21 +25,40 @@
 
     <!-- javascript libraries -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- JQuery libs have to be loaded first, otherwise they won't be detected correctly -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.12.2/dojo/dojo.js"></script>
-    <script src="assets/glow/core.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+    <script src="assets/glow/core.js"></script>
     <script src="https://google.github.io/closure-library/source/closure/goog/base.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader/yuiloader-min.js"></script>
     <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
+    <!-- CMS related -->
+
+    <meta name="generator" content="Blogger">
+    <script>window.Drupal = {}</script>
+    <meta name="generator" content="Ghost 0.11">
+    <meta name="generator" content="Jekyll v3.4.3">
+    <script>var jimdoData = {}</script>
+    <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+    <script>window.__GRAPHQL_URI__ = "https://dummy.medium.com/_/graphql"</script>
+    <meta name="generator" content="Movable Type Pro 4.25">
+    <meta name="generator" content="Jekyll &amp; Octopress (http://octopress.org)">
+    <script src="https://assets.squarespace.com/universal/scripts-compressed/common-d6cc17653cc3a94db73a9-min.en-US.js"></script>
+    <script src="https://assets.tumblr.com/assets/scripts/tumblelog.js"></script>
+    <meta name="generator" content="http://www.typepad.com/">
+    <meta name="generator" content="TYPO3 CMS">
+    <script>var Weebly = {}</script>
+    <script>var wixTagManager = {}</script>
+    <meta name="generator" content="WordPress 4.7.4">
 
     <!-- Font related -->
 
@@ -47,28 +68,14 @@
     <script src="https://mikeindustries.com/blog/files/sifr/2.0/sifr.js"></script>
     <script src="https://use.typekit.com/fbz1vwc.js"></script>
 
-    <!-- CMS related -->
+    <!-- Comments related -->
 
-    <meta name="generator" content="Blogger">
-    <script>
-        // Hardcoded Drupal emulation. Should work the same if drupal.js is included in a Drupal website
-        window.Drupal = {}
-    </script>
-    <meta name="generator" content="Ghost 0.11">
-    <meta name="generator" content="Jekyll v3.4.3">
-    <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
-    <meta name="generator" content="Movable Type Pro 4.25">
-    <meta name="generator" content="Jekyll &amp; Octopress (http://octopress.org)">
-    <script src="https://static.squarespace.com/universal/scripts-compressed/common-c7bc949f86545e555dbc665e3315645c-min.js"></script>
-    <script src="https://assets.tumblr.com/assets/scripts/tumblelog.js"></script>
-    <meta name="generator" content="http://www.typepad.com/">
-    <meta name="generator" content="TYPO3 CMS">
-    <meta name="generator" content="WordPress 4.7.4">
-  
+    <script>var disqus_identifier=1;</script>
+    <script>var DiscourseEmbed=1;</script>
+
     <!-- Other -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-    <script>var disqus_identifier=1;</script>
         
 </head>
 <body>
@@ -79,99 +86,103 @@
 
   <div id="results"></div>
 
+  <!-- Comments -->
+  <script src="https://latest.cactus.chat/cactus.js"></script>
+  <iframe class="giscus-frame" title="Comments" scrolling="no" src="#" style="display: none"></iframe>
+  <section id="isso-thread" style="display: none"></section>
+  <iframe class="utterances-frame" title="Comments" scrolling="no" src="#" style="display: none"></iframe>
+
   <!-- Analytics scripts -->
 
+  <!-- Ackee -->
+	<script>var ackeeTracker = {}</script>
+
   <!-- Chartbeat -->
-	<script>
-		var _sf_async_config = _sf_async_config || {};
-		_sf_async_config.uid = 0;
-		_sf_async_config.domain = "example.com";
-	</script>
-	<script src="https://static.chartbeat.com/js/chartbeat_mab.js"></script>
+	<script>var _sf_async_config = _sf_async_config || {}</script>
+	<script src="https://static.chartbeat.com/js/chartbeat.js"></script>
 
   <!-- Clicky -->
-  <script>
-    var clicky_custom = {};
-    clicky_custom.timer = 200;
-    clicky_custom.timeout = 60;
-    //clicky_custom.no_cookies = 1;
+  <script>var clicky_site_ids = clicky_site_ids || [];</script>
+	<script src="https://static.getclicky.com/js"></script>
 
-    var clicky = { log: function() { return; }, goal: function() { return; }};
-    var clicky_site_id = 0;
-    (function() {
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://static.getclicky.com/js';
-      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-    })();
+  <!-- Cloudflare Insights -->
+  <script src="https://static.cloudflareinsights.com/beacon.min.js?token=123&spa=false">
   </script>
+
+  <!-- Fathom -->
+  <script>var fathom = {}</script>
+  <script src="https://cdn.usefathom.com/script.js"></script>
 
   <!-- Gauges -->
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '0');
-      t.src = 'https://secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
-    
-  <!-- Google Analytics -->
-  <script>
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-    _gaq.push(['_setDomainName', '.allmarkedup.com']);
-    _gaq.push(['_trackPageview']);
+  <script>var _gauges = _gauges || [];</script>
+  <script src="https://secure.gaug.es/track.js" async id="gauges-tracker"></script>
+  
+  <!-- GoatCounter-->
+  <script>var goatcounter = {}</script>
+  <script src="https://gc.zgo.at/count.js"></script>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+  <!-- Google Analytics Legacy (ga.js) -->
+  <script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-XXXXX-X']);</script>
+  <script src="https://ssl.google-analytics.com/ga.js"></script>
+
+  <!-- Google Analytics Legacy (analytics.js) -->
+  <script>var ga = ga || [];</script>
+  <script src="https://www.google-analytics.com/analytics.js"></script>
+
+  <!-- Google Analytics (GA4) -->
+  <script src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxxxxx-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
   </script>
+
+  <!-- Koko Analytics -->
+  <script>var koko_analytics = {}</script>
+  <script src="https://www.kokoanalytics.com/app/plugins/koko-analytics/assets/dist/js/script.js?ver=1.0.35"></script>
+
+  <!-- Microanalytics -->
+  <script src="https://microanalytics.io/js/script.js"></script>
 
   <!-- Mint -->
   <script src="https://haveamint.com/mint/?js"></script>
   
   <!-- New Relic -->
-  <script>NREUM={}</script>
+  <script>var NREUM = {}</script>
   
   <!-- OpenWebAnalytics -->
-  <script src="http://www.openwebanalytics.com/wp-content/plugins/owa/modules/base/js/owa.tracker-combined-min.js"></script>
-  <script>
-    var owa_cmds = owa_cmds || [];
-  </script>
+  <script>var OWA = {}, owa_baseUrl = "";</script>
 
-  <!-- Piwik -->
+  <!-- Matomo -->
   <script>
-    var pkBaseURL = "https://demo.piwik.org/";
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' %3E%3C/script%3E"));
+    var _paq = {};
+    var Matomo = {};
+    var Piwik = {};
   </script>
-  <script>
-    try {
-      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-      piwikTracker.trackPageView();
-      piwikTracker.enableLinkTracking();
-    } catch( err ) {}
-  </script>
+  <script src="https://demo.matomo.cloud/matomo.js"></script>
+
+  <!-- Pirsch -->
+  <script src="https://api.pirsch.io/pirsch.js" id="pirschjs"></script>
+
+  <!-- Plausible -->
+  <script>var plausible = {}</script>
+  <script src="https://plausible.io/js/script.js"></script>
 
   <!-- Reinvigorate -->
-  <script src="http://include.reinvigorate.net/re_.js"></script>
-  <script>
-    try {
-      reinvigorate.track("3jwtc-a8guvw3862");
-    } catch(err) {}
-  </script>
-    
-  <!-- Slim Stat Analytics -->
-  <script src="https://www.wp-slimstat.com/wp-content/plugins/wp-slimstat/wp-slimstat.min.js"></script>
+  <script>var reinvigorate = {};</script>
+
+  <!-- Simple Analytics -->
+  <script src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+  <!-- Slimstat Analytics -->
   <script>
     var SlimStatParams = {"ajaxurl":"http:\/\/example.com","id":"0"};
   </script>
+  <script src="https://cdn.jsdelivr.net/wp/wp-slimstat/tags/4.9.1.1/wp-slimstat.min.js"></script>
+
+  <!-- Umami -->
+  <script>var umami = {};</script>
+  <script src="https://example.com/umami.js"></script>
 
   <!-- W3Counter -->
   <script src="https://www.w3counter.com/tracker.js?id=1"></script>
@@ -197,14 +208,12 @@
     var output  = '',
         results = Sniffer.run();
     console.dir(results);
-    for ( group in results )
-    {
+    for ( group in results ) {
         output += '<div class="group"><h2>' + results[group].description + '</h2><table>';
         var row = 0;
-        for ( test in results[group].results )
-        {
+        for ( test in results[group].results ) {
             var result = results[group].results[test];
-            var affirmation =  ( result == 'false' ) ? 'false' : 'true';
+            var affirmation =  ( result === false ) ? 'false' : 'true';
             output += '<tr';
             if ( row % 2 ) output += ' class="even"';
             output += '><th>' + test + '</th><td class="' + affirmation + '">' + result + '</td></tr>';
