@@ -64,6 +64,7 @@ Sniffer can detect the following items:
   * Plausible
   * Reinvigorate
   * Slimstat Analytics
+  * TinyAnalytics
   * Umami
   * W3Counter
   * Webtrends
@@ -81,7 +82,6 @@ Sniffer can detect the following items:
   * Giscus
   * Isso
   * Utterances
-
 
 Contributors
 ------------
