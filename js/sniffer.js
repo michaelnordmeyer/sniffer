@@ -445,7 +445,7 @@ var Sniffer = (function(win, doc, undefined) {
           return !!win.SlimStatParams;
         }
       }],
-      'Tinyanalytics': [{
+      'TinyAnalytics': [{
         type: 'custom',
         test: function() {
           return !!window["tinyanalytics"];
