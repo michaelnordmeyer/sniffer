@@ -39,7 +39,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader/yuiloader-min.js"></script>
-  <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+  <script src="https://yui-s.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
 
   <!-- CMS related -->
 
@@ -82,7 +82,7 @@
 
   <p class="description">Below is a list of all the tests that Sniffer currently runs. All tests should either return <code class="true">true</code> or a string result (numbers generally represent version numbers) below.</p>
 
-  <div id="results"></div>
+  <div id="results">Loading external tracking scripts…</div>
 
   <!-- Comments -->
   <script src="https://latest.cactus.chat/cactus.js"></script>
@@ -93,30 +93,27 @@
   <!-- Analytics scripts -->
 
   <!-- Ackee -->
-	<script>var ackeeTracker = {}</script>
+	<script src="https://a.electerious.com/_.js"></script>
+
+  <!-- Cabin -->
+  <script src="https://scripts.withcabin.com/hello.js"></script>
 
   <!-- Chartbeat -->
-	<script>var _sf_async_config = _sf_async_config || {}</script>
 	<script src="https://static.chartbeat.com/js/chartbeat.js"></script>
 
   <!-- Clicky -->
-  <script>var clicky_site_ids = clicky_site_ids || [];</script>
 	<script src="https://static.getclicky.com/js"></script>
 
   <!-- Cloudflare Insights -->
-  <script src="https://static.cloudflareinsights.com/beacon.min.js?token=123&spa=false">
-  </script>
+  <script src="https://static.cloudflareinsights.com/beacon.min.js?token=123&spa=false"></script>
 
   <!-- Fathom -->
-  <script>var fathom = {}</script>
   <script src="https://cdn.usefathom.com/script.js"></script>
 
   <!-- Gauges -->
-  <script>var _gauges = _gauges || [];</script>
   <script src="https://secure.gaug.es/track.js" async id="gauges-tracker"></script>
 
   <!-- GoatCounter-->
-  <script>var goatcounter = {}</script>
   <script src="https://gc.zgo.at/count.js"></script>
 
   <!-- Google Analytics Legacy (ga.js) -->
@@ -136,20 +133,7 @@
   </script>
 
   <!-- Koko Analytics -->
-  <script>var koko_analytics = {}</script>
-  <script src="https://www.kokoanalytics.com/app/plugins/koko-analytics/assets/dist/js/script.js?ver=1.0.35"></script>
-
-  <!-- Microanalytics -->
-  <script src="https://microanalytics.io/js/script.js"></script>
-
-  <!-- Mint -->
-  <script src="https://haveamint.com/mint/?js"></script>
-
-  <!-- New Relic -->
-  <script>var NREUM = {}</script>
-
-  <!-- OpenWebAnalytics -->
-  <script>var OWA = {}, owa_baseUrl = "";</script>
+  <script src="https://www.kokoanalytics.com/wp-content/plugins/koko-analytics/assets/dist/js/script.js"></script>
 
   <!-- Matomo -->
   <script>
@@ -159,11 +143,19 @@
   </script>
   <script src="https://demo.matomo.cloud/matomo.js"></script>
 
+  <!-- Microanalytics -->
+  <script src="https://microanalytics.io/js/script.js"></script>
+
+  <!-- New Relic -->
+  <script>var NREUM = {}</script>
+
+  <!-- OpenWebAnalytics -->
+  <script>var OWA = {}, owa_baseUrl = "";</script>
+
   <!-- Pirsch -->
   <script src="https://api.pirsch.io/pirsch.js" id="pirschjs"></script>
 
   <!-- Plausible -->
-  <script>var plausible = {}</script>
   <script src="https://plausible.io/js/script.js"></script>
 
   <!-- Reinvigorate -->
@@ -174,14 +166,16 @@
 
   <!-- Slimstat Analytics -->
   <script>var SlimStatParams = {"ajaxurl":"http:\/\/example.com","id":"0"};</script>
-  <script src="https://cdn.jsdelivr.net/wp/wp-slimstat/tags/4.9.1.1/wp-slimstat.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/wp/wp-slimstat/tags/5.1.5/wp-slimstat.min.js"></script>
+
+  <!-- Statcounter -->
+  <script src="https://secure.statcounter.com/counter/counter.js"></script>
 
   <!-- TinyAnalytics -->
-  <script>window["tinyanalytics"] = {};</script>
+  <script src="https://cdn.segment.com/analytics.js/v1/sfTKnvv76IVelRjAOi8BAjgdXQVVrSE2/analytics.min.js"></script>
 
   <!-- Umami -->
-  <script>var umami = {};</script>
-  <script src="https://example.com/umami.js"></script>
+  <script src="https://umami.is/a/script.js"></script>
 
   <!-- W3Counter -->
   <script src="https://www.w3counter.com/tracker.js?id=1"></script>

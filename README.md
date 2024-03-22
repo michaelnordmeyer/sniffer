@@ -46,6 +46,7 @@ Sniffer can detect the following items:
   * WordPress
 * Analytics
   * Ackee
+  * Cabin
   * Chartbeat
   * Clicky
   * Cloudflare Insights
@@ -56,13 +57,13 @@ Sniffer can detect the following items:
   * Koko Analytics
   * Matomo
   * Microanalytics
-  * Mint
   * New Relic
   * Open Web Analytics
   * Pirsch
   * Plausible
   * Reinvigorate
   * Slimstat Analytics
+  * Statcounter
   * TinyAnalytics
   * Umami
   * W3Counter
