@@ -409,6 +409,10 @@ var Sniffer = (function(win, doc, undefined) {
         test: /<script [^>]+\/\/ssl\.google-analytics\.com\/ga\.js/i
       },
       {
+        type: 'text',
+        test: /<script [^>]+\/\/www\.google-analytics\.com\/ga\.js/i
+      },
+      {
         type: 'custom',
         test: function() {
           return !!(win._gaq || win._gat);
