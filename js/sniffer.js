@@ -394,22 +394,54 @@ var Sniffer = (function(win, doc, undefined) {
           return !!win.goatcounter;
         }
       }],
-      'Google Analytics': [{
+      'Google Analytics (Urchin)': [{
         type: 'text',
-        test: /<script [^>]+\/\/ssl\.google-analytics\.com\/ga\.js/i
-      },
-      {
-        type: 'text',
-        test: /<script [^>]+\/\/www\.google-analytics\.com\/analytics\.js/i
-      },
-      {
-        type: 'text',
-        test: /<script [^>]+\/\/www\.googletagmanager\.com\/gtag\/js\?id=UA-xxxxxxxxx-1/i
+        test: /<script [^>]+\/\/www\.google-analytics\.com\/urchin\.js/i
       },
       {
         type: 'custom',
         test: function() {
-          return !!(win._gat || win._gaq || win.ga || win.datalayer || win.gtag);
+          return !!(win._uacct);
+        }
+      }],
+      'Google Analytics (GA3 2005)': [{
+        type: 'text',
+        test: /<script [^>]+\/\/ssl\.google-analytics\.com\/ga\.js/i
+      },
+      {
+        type: 'custom',
+        test: function() {
+          return !!(win._gaq || win._gat);
+        }
+      }],
+      'Google Analytics (GA3 2012)': [{
+        type: 'text',
+        test: /<script [^>]+\/\/www\.google-analytics\.com\/analytics\.js/i
+      },
+      {
+        type: 'custom',
+        test: function() {
+          return !!(win.ga);
+        }
+      }],
+      'Google Analytics (GA3 on GTM)': [{
+        type: 'text',
+        test: /<script [^>]+\/\/www\.googletagmanager\.com\/gtag\/js\?id=UA-[A-Z0-9]{8}-[1-9]/i
+      },
+      {
+        type: 'custom',
+        test: function() {
+          return !!(win.gtag);
+        }
+      }],
+      'Google Analytics (GA4)': [{
+        type: 'text',
+        test: /<script [^>]+\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-[A-Z0-9]{10}/i
+      },
+      {
+        type: 'custom',
+        test: function() {
+          return !!(win.gtag);
         }
       }],
       'Koko Analytics': [{
