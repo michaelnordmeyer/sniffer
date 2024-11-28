@@ -394,7 +394,7 @@ var Sniffer = (function(win, doc, undefined) {
           return !!win.goatcounter;
         }
       }],
-      'Google Analytics OG': [{ // 2005
+      'Google Analytics 1': [{ // 2005
         type: 'text',
         test: /<script [^>]+\/\/www\.google-analytics\.com\/urchin\.js/i
       },
