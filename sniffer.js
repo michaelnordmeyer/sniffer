@@ -222,6 +222,13 @@ var Sniffer = (function(win, doc, undefined) {
           return win.ghost ? true : false;
         }
       }],
+      'Hugo': [{
+        type: 'meta',
+        test: {
+          name: 'generator',
+          match: /Hugo ([\d\.]*)/i
+        }
+      }],
       'Jekyll': [{
         type: 'meta',
         test: {

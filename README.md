@@ -31,6 +31,7 @@ Sniffer can detect the following items:
   * Blogger
   * Drupal
   * Ghost
+  * Hugo
   * Jekyll
   * Jimdo
   * Joomla
