@@ -73,6 +73,7 @@ Sniffer can detect the following items:
   * Webtrends
   * Woopra
   * WordPress Stats
+  * WP Statistics
 * Font embedding (technique)
   * Adobe Fonts
   * Cufon

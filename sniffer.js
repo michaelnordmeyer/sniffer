@@ -631,6 +631,12 @@ var Sniffer = (function(win, doc, undefined) {
         test: function() {
           return !!(win._tkq || win._stq);
         }
+      }],
+      'WP Statistics': [{
+        type: 'custom',
+        test: function() {
+          return !!win.WP_Statistics_Tracker_Object;
+        }
       }]
     }
 
