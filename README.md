@@ -66,6 +66,7 @@ Sniffer can detect the following items:
   * Reinvigorate
   * Slimstat Analytics
   * Statcounter
+  * Statify
   * TinyAnalytics
   * Umami
   * W3Counter
