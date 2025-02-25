@@ -64,6 +64,7 @@ Sniffer can detect the following items:
   * Pirsch
   * Plausible
   * Reinvigorate
+  * Simple Analytics
   * Slimstat Analytics
   * Statcounter
   * Statify
