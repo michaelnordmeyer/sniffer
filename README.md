@@ -51,6 +51,7 @@ Sniffer can detect the following items:
   * Tumblr
   * Typepad
   * Typo3
+  * VitePress
   * VuePress
   * Weebly
   * Wix
