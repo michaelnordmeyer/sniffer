@@ -95,10 +95,14 @@ Sniffer can detect the following items:
   * sIFR
 * Commenting systems
   * Cactus Comments
+  * Commento
+  * Cusdis
   * Discourse
   * Disqus
   * Giscus
   * Isso
+  * OpenWeb
+  * Remark42
   * Utterances
 
 ## Usage
