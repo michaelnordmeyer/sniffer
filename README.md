@@ -1,10 +1,10 @@
 # Sniffer
 
-A JavaScript library for sniffing out information about pages, such as which JS libraries are used, what CMS the site runs on, what analytics packages it uses, and more. It is intended to be used in bookmarklets or injected JS widgets that need to gather information about the host page and it's component parts.
+A JavaScript library for sniffing out information about pages, such as what CMS the site runs on, which JavaScript libraries are used, what font services, commenting system, or analytics packages it uses, and more. It is intended to be used in bookmarklets or injected JavaScript widgets that need to gather information about the host page and its component parts.
 
 Where it can, Sniffer will return a string with more information (such as a version number) for each test; otherwise it will return boolean `true` or `false`.
 
-Originally created for use in [Snoopy](https://github.com/michaelnordmeyer/snoopy).
+Created for use in [Snoopy](https://github.com/michaelnordmeyer/snoopy), a bookmarklet to display detected features of the current web page.
 
 ## Detection Capabilities
 
@@ -13,20 +13,6 @@ Sniffer can detect the following items:
 * General page information
   * Doctype
   * Charset
-* JavaScript libraries
-  * Dojo
-  * ExtJS
-  * Glow
-  * Google Closure
-  * jQuery
-  * JQuery Mobile
-  * jQuery UI
-  * Modernizr
-  * MooTools
-  * Prototype
-  * Scriptaculous
-  * YUI2
-  * YUI3
 * Content Management Systems
   * Astro
   * Blogger
@@ -60,6 +46,36 @@ Sniffer can detect the following items:
   * Wix
   * WordPress
   * Write.as
+* JavaScript libraries
+  * Dojo
+  * ExtJS
+  * Glow
+  * Google Closure
+  * jQuery
+  * JQuery Mobile
+  * jQuery UI
+  * Modernizr
+  * MooTools
+  * Prototype
+  * Scriptaculous
+  * YUI2
+  * YUI3
+* Font embedding (technique)
+  * Adobe Fonts
+  * Cufon
+  * Google Fonts
+  * sIFR
+* Commenting systems
+  * Cactus Comments
+  * Commento
+  * Cusdis
+  * Discourse
+  * Disqus
+  * Giscus
+  * Isso
+  * OpenWeb
+  * Remark42
+  * Utterances
 * Analytics
   * Ackee
   * Bearblog
@@ -91,22 +107,10 @@ Sniffer can detect the following items:
   * Woopra
   * WordPress Stats
   * WP Statistics
-* Font embedding (technique)
-  * Adobe Fonts
-  * Cufon
-  * Google Fonts
-  * sIFR
-* Commenting systems
-  * Cactus Comments
-  * Commento
-  * Cusdis
-  * Discourse
-  * Disqus
-  * Giscus
-  * Isso
-  * OpenWeb
-  * Remark42
-  * Utterances
+
+## Dependencies
+
+None.
 
 ## Usage
 
@@ -130,5 +134,5 @@ It's probably easiest to play around with the results of this in Firebug or Web 
 
 ## Contributors
 
-* [Mark Perkins (owner)](https://github.com/allmarkedup)
-* [Michael Nordmeyer](https://github.com/michaelnordmeyer)
+* [Mark Perkins (original author)](https://github.com/allmarkedup)
+* [Michael Nordmeyer (current maintainer)](https://github.com/michaelnordmeyer)

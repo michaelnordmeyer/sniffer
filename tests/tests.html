@@ -23,24 +23,6 @@
     code { font-family: monospace; }
   </style>
 
-  <!-- javascript libraries -->
-
-  <!-- JQuery libs have to be loaded first, otherwise they won't be detected correctly -->
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.12.2/dojo/dojo.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
-  <script src="assets/glow/core.js"></script>
-  <script src="https://google.github.io/closure-library/source/closure/goog/base.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader/yuiloader-min.js"></script>
-  <script src="https://yui-s.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
-
   <!-- CMS related -->
 
   <meta name="generator" content="Astro v5.5.6">
@@ -76,13 +58,31 @@
   <meta name="generator" content="WordPress 4.7.4">
   <meta name="generator" content="Write.as">
 
+  <!-- javascript libraries -->
+
+  <!-- JQuery libs have to be loaded first, otherwise they won't be detected correctly -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.12.2/dojo/dojo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+  <script src="assets/glow/core.js"></script>
+  <script src="https://google.github.io/closure-library/source/closure/goog/base.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader/yuiloader-min.js"></script>
+  <script src="https://yui-s.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+
   <!-- Font related -->
 
+  <script src="https://use.typekit.com/fbz1vwc.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cufon/1.09i/cufon-yui.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
   <script src="https://mikeindustries.com/blog/files/sifr/2.0/sifr.js"></script>
-  <script src="https://use.typekit.com/fbz1vwc.js"></script>
 
   <!-- Comments related -->
 
@@ -255,14 +255,14 @@
     var output  = '';
     var results = Sniffer.run();
     console.dir(results);
-    for ( group in results ) {
+    for (group in results) {
       output += '<div class="group"><h2>' + results[group].description + '</h2><table>';
       var row = 0;
-      for ( test in results[group].results ) {
+      for (test in results[group].results) {
         var result = results[group].results[test];
-        var affirmation = ( result === false ) ? 'false' : 'true';
+        var affirmation = (result === false) ? 'false' : 'true';
         output += '<tr';
-        if ( row % 2 ) output += ' class="even"';
+        if (row % 2) output += ' class="even"';
         output += '><th>' + test + '</th><td class="' + affirmation + '">' + result + '</td></tr>';
         row++;
       }
