@@ -37,6 +37,7 @@ Sniffer can detect the following items:
   * Pandoc
   * Scully
   * Squarespace
+  * Sushy
   * Tumblr
   * Typepad
   * Typo3
