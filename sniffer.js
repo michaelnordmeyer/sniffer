@@ -888,7 +888,7 @@ var Sniffer = (function(win, doc, undefined) {
   if (metas.length) {
     test_runner.meta = function(test) {
       for (var meta, i = -1; meta = metas[++i];) {
-        if (meta.name == test.name) {
+        if (meta.name.localeCompare(test.name, "en", { sensitivity: "base" }) === 0) {
           var res = match(meta.content, test.match);
           if (res) {
             return res;
