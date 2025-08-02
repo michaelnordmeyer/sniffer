@@ -126,6 +126,12 @@ var Sniffer = (function(win, doc, undefined) {
         }
       }],
       'Drupal': [{
+        type: 'meta',
+        test: {
+          name: 'generator',
+          match: /Drupal ([\w\.-]*) \(https:\/\/www\.drupal\.org\)/i
+        }
+      }, {
         type: 'custom',
         test: function() {
           return win.Drupal ? true : false;
@@ -150,11 +156,6 @@ var Sniffer = (function(win, doc, undefined) {
         test: {
           name: 'generator',
           match: /Ghost\s?([\w\.-]*)/i
-        }
-      }, {
-        type: 'custom',
-        test: function() {
-          return win.ghost ? true : false;
         }
       }],
       'Gridsome': [{
@@ -186,6 +187,18 @@ var Sniffer = (function(win, doc, undefined) {
         }
       }],
       'Jimdo': [{
+        type: 'meta',
+        test: {
+          name: 'generator',
+          match: /Jimdo Creator/i
+        }
+      }, {
+        type: 'meta',
+        test: {
+          name: 'generator',
+          match: /Jimdo Dolphin/i
+        }
+      }, {
         type: 'custom',
         test: function() {
           return win.jimdoData ? true : false;
