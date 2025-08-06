@@ -47,6 +47,7 @@ Sniffer can detect the following items:
   * Wix
   * WordPress
   * Write.as
+  * WriteFreely
 * JavaScript libraries
   * Dojo
   * ExtJS
