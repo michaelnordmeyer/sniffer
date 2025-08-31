@@ -256,6 +256,10 @@ var Sniffer = (function(win, doc, undefined) {
           match: /Nikola \(getnikola\.com\)/i
         }
       }],
+      'Obsidian Publish': [{
+        type: 'text',
+        test: /<base [^>]+\/\/publish\.obsidian\.md/i
+      }],
       'Octopress': [{
         type: 'meta',
         test: {

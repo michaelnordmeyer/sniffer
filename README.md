@@ -33,6 +33,7 @@ Sniffer can detect the following items:
   * Metalsmith
   * MovableType
   * Nikola
+  * Obsidian Publish
   * Octopress
   * Pandoc
   * Scully
@@ -129,6 +130,10 @@ The result will be `undefined` if Sniffer does not have a check corresponding to
 `Sniffer.run()` will run all the tests Sniffer has and return an JSON object of results, grouped by test type (i.e. CMS, JavaScript Library, etc).
 
 It's probably easiest to play around with the results of this in Firebug or Web Inspector to understand the exact structure of the JSON object returned.
+
+## Tests
+
+All Sniffer tests can be unit-tested by loading `tests.html` in a browser. Note that Obsidian Publish cannot be tested and will always fail, because it uses the `<base>` tag, which breaks all tests on the test page.
 
 ### Sniffer.results
 
