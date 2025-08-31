@@ -785,7 +785,10 @@ var Sniffer = (function(win, doc, undefined) {
       }],
       'Statcounter': [{
         type: 'text',
-        test: /<script [^>]+\/\/secure\.statcounter\.com\/counter\/counter\.js/i
+        test: /<script [^>]+statcounter\.com\/counter\/counter\.js/i
+      },{
+        type: 'text',
+        test: /<script [^>]+statcounter\.com\/counter\/counter_test\.js/i
       }],
       'Statify': [{
         type: 'custom',
