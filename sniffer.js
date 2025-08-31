@@ -569,7 +569,7 @@ var Sniffer = (function(win, doc, undefined) {
       }],
       'Bearblog': [{
         type: 'text',
-        test: /<style>[^\/]+body.hover/i
+        test: /<style>[^\/]+body:hover/i
       }],
       'Cabin': [{
         type: 'text',
