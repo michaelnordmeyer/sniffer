@@ -36,6 +36,7 @@ Sniffer can detect the following items:
   * Obsidian Publish
   * Octopress
   * Pandoc
+  * Publii
   * Scully
   * Squarespace
   * Sushy
