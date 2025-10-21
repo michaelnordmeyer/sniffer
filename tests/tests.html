@@ -132,25 +132,36 @@
     }
   </style>
 
+  <!-- Burst Statistics -->
+  <script>var burst = {}</script>
+
   <!-- Cabin -->
+  <script>var cabin = {}</script>
   <script src="https://scripts.withcabin.com/hello.js"></script>
 
   <!-- Chartbeat -->
+  <script>var _cb_shared = {}</script>
+  <script>var _sf_async_config = {}</script>
 	<script src="https://static.chartbeat.com/js/chartbeat.js"></script>
 
   <!-- Clicky -->
+  <script>var clicky = {}</script>
 	<script src="https://static.getclicky.com/js"></script>
 
   <!-- Cloudflare Insights -->
+  <script>var __cfBeacon = {}</script>
   <script src="https://static.cloudflareinsights.com/beacon.min.js?token=123&spa=false"></script>
 
   <!-- Fathom -->
+  <script>var fathom = {}</script>
   <script src="https://cdn.usefathom.com/script.js"></script>
 
   <!-- Gauges -->
+  <script>var _gauges = []</script>
   <script src="https://secure.gaug.es/track.js" async id="gauges-tracker"></script>
 
   <!-- GoatCounter-->
+  <script>var goatcounter = {}</script>
   <script src="https://gc.zgo.at/count.js"></script>
 
   <!-- Google Analytics Legacy (Urchin) -->
@@ -184,7 +195,12 @@
   <!-- Google Tag Manager -->
   <script src="https://www.googletagmanager.com/gtm.js?id=GTM-ABC1234567"></script>
 
+  <!-- Hotjar -->
+  <script>var hj = {}</script>
+  <script src="https://static.hotjar.com/c/hotjar-1234567.js?sv=6"></script>
+
   <!-- Koko Analytics -->
+  <script>var koko_analytics = {}</script>
   <script src="https://www.kokoanalytics.com/wp-content/plugins/koko-analytics/assets/dist/js/script.js"></script>
 
   <!-- Matomo -->
@@ -196,6 +212,7 @@
   <script src="https://demo.matomo.cloud/matomo.js"></script>
 
   <!-- Microanalytics -->
+  <script>var pa = {}</script>
   <script src="https://microanalytics.io/js/script.js"></script>
 
   <!-- New Relic -->
@@ -203,20 +220,21 @@
 
   <!-- OpenWebAnalytics -->
   <script>var OWA = {}, owa_baseUrl = "";</script>
+  <script src="/modules/base/js/owa.tracker-combined-min.js"></script>
 
   <!-- Pirsch -->
   <script src="https://api.pirsch.io/pirsch.js" id="pirschjs"></script>
 
   <!-- Plausible -->
+  <script>var plausible = []</script>
   <script src="https://plausible.io/js/script.js"></script>
 
-  <!-- Reinvigorate -->
-  <script>var reinvigorate = {};</script>
-
   <!-- Rybbit -->
-  <script src="https://app.rybbit.io/api/script.js" async data-site-id="123"></script>
+  <script>var rybbit = {};</script>
+  <script src="https://app.rybbit.io/api/script.js" async data-site-id="0"></script>
 
   <!-- Simple Analytics -->
+  <script>var sa_loaded = true;</script>
   <script src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
   <!-- Slimstat Analytics -->
@@ -224,16 +242,36 @@
   <script src="https://cdn.jsdelivr.net/wp/wp-slimstat/tags/5.1.5/wp-slimstat.min.js"></script>
 
   <!-- Statcounter -->
+  <script>var _statcounter = {};</script>
   <script src="https://secure.statcounter.com/counter/counter.js"></script>
 
   <!-- Statify -->
   <script>var statify_ajax = {};</script>
+  <script>var statifyAjax = {};</script>
 
-  <!-- TinyAnalytics -->
-  <script src="https://cdn.segment.com/analytics.js/v1/sfTKnvv76IVelRjAOi8BAjgdXQVVrSE2/analytics.min.js"></script>
+  <!-- TinyAnalytics.io -->
+  <script>var tinyanalytics = {};</script>
+  <script src="https://app.tinyanalytics.io/pixel/1234567890aBcDeF"></script>
+
+  <!-- Tinybird -->
+  <script>var Tinybird = {};</script>
+  <script defer src="https://unpkg.com/@tinybirdco/flock.js" data-token="TRACKER_TOKEN"></script>
+
+  <!-- Tinylytics -->
+  <script>var should_collect = false;</script>
+  <script defer src="https://tinylytics.app/embed/1234567890aBcDeFgHiJ.js"></script>
+  <script defer src="https://tinylytics.app/embed/1234567890aBcDeFgHiJ/min.js"></script>
+
+  <!-- Trackboxx -->
+  <script>var trackboxx = {};</script>
+  <script src="https://cdn.trackboxx.info/p/tracker.js"></script>
 
   <!-- Umami -->
   <script src="https://umami.is/a/script.js"></script>
+
+  <!-- Usermaven -->
+  <script>var usermaven = {};</script>
+  <script src="https://t.usermaven.com/lib.js"></script>
 
   <!-- W3Counter -->
   <script src="https://www.w3counter.com/tracker.js?id=1"></script>
@@ -250,10 +288,10 @@
 	</script>
 
   <!-- WordPress Stats -->
-  <script src="https://stats.wp.com/w.js"></script>
-  <script src="https://stats.wp.com/e-xx.js"></script>
   <script>var _tkq = {};</script>
   <script>var _stq = {};</script>
+  <script src="https://stats.wp.com/w.js"></script>
+  <script src="https://stats.wp.com/e-xx.js"></script>
 
   <!-- WP Statistics -->
   <script>var WP_Statistics_Tracker_Object = {};</script>
