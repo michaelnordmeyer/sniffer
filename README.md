@@ -32,6 +32,8 @@ Sniffer can detect the following items:
   * Medium
   * Metalsmith
   * MovableType
+  * Next.js
+  * Nuxt.js
   * Nikola
   * Obsidian Publish
   * Octopress
