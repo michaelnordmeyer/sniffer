@@ -16,6 +16,7 @@ Sniffer can detect the following items:
 * Content Management Systems
   * Astro
   * Blogger
+  * Blot
   * ClassicPress
   * Docusaurus
   * Drupal
