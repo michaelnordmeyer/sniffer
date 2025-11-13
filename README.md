@@ -95,9 +95,9 @@ Sniffer can detect the following items:
   * Fathom
   * Gauges
   * GoatCounter
-  * GoSquared
   * Google Analytics (urchin.js, GA3 (=UA, ga.js, analytics.js, gtag.js), and GA4)
   * Google Tag Manager
+  * GoSquared
   * Hotjar
   * Koko Analytics
   * Matomo
