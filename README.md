@@ -85,6 +85,7 @@ Sniffer can detect the following items:
   * OpenWeb
   * Remark42
   * Utterances
+  * Zoomment
 * Analytics
   * Ackee
   * Bearblog
@@ -107,7 +108,7 @@ Sniffer can detect the following items:
   * Open Web Analytics
   * Pirsch
   * Plausible
-  * Posthog
+  * PostHog
   * Rybbit
   * Seline
   * Simple Analytics
