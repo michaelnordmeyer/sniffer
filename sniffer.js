@@ -762,6 +762,10 @@ var Sniffer = (function(win, doc, undefined) {
         test: /<script [^>]+\/\/gc\.zgo\.at\/count\.js/i
       },
       {
+        type: 'text',
+        test: /<script[^>]+data-goatcounter=/i
+      },
+      {
         type: 'custom',
         test: function() {
           return !!win.goatcounter;
