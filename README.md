@@ -166,7 +166,7 @@ It's probably easiest to play around with the results of this in Firebug or Web 
 
 ## Tests
 
-All Sniffer tests can be unit-tested by loading `tests.html` in a browser. Note that Obsidian Publish cannot be tested and will always fail, because it uses the `<base>` tag, which breaks all tests on the test page.
+All Sniffer tests can be unit-tested by loading `tests.html` in a browser. Note that Obsidian Publish cannot be tested and will always fail, because it uses the `<base>` tag, which breaks all tests on the test page, and Squarespace always fails, because it won't setup its JavaScript properly when testing.
 
 ### Sniffer.results
 
