@@ -43,6 +43,7 @@ Sniffer can detect the following items:
   * Octopress
   * Pandoc
   * Publii
+  * Pure Blog
   * Quarto
   * Scully
   * Squarespace
